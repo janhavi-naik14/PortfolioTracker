@@ -1,7 +1,7 @@
 
 # 📈 InvestTrackr – Portfolio Tracker Dashboard
 
-![Dashboard Screenshot](./2cf81f0b-60bf-4bb8-9724-ce132e442bb0.png)
+![Dashboard Screenshot](./stock.png)
 
 **InvestTrackr** is a full-stack stock portfolio management application that allows users to track their investments in real time. It provides features such as current stock prices, profit/loss calculations, visual charts, and CRUD operations for stocks.
 
@@ -30,7 +30,7 @@
 
 > Below is a sample dashboard showing total investments, current value, profit/loss summary, and a holdings table:
 
-![Dashboard Screenshot](./2cf81f0b-60bf-4bb8-9724-ce132e442bb0.png)
+![Dashboard Screenshot](./stock.png)
 
 ---
 
