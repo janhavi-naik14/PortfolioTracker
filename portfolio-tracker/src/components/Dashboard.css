@@ -1,0 +1,91 @@
+.dashboard {
+  font-family: 'Arial', sans-serif;
+}
+
+.metrics-container {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+}
+.navbar .d-flex {
+  justify-content: flex-end;
+  align-items: center; /* Vertically aligns buttons with the logo */
+}
+
+
+.chart-section {
+  background-color: #ffffff;
+  border-radius: 8px;
+  min-height: 200px; /* Adjust this value as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #dee2e6;
+  padding: 10px; /* Optional for spacing */
+}
+
+.chart-section canvas {
+  height: 100% !important; /* Enforce canvas height */
+  max-height: 200px; /* Adjust to limit the chart height */
+  width: 100% !important;
+}
+
+
+.chart-placeholder {
+  width: 100%;
+  height: 80%;
+  text-align: center;
+  color: #6c757d;
+}
+
+.stock-list {
+  background-color: #f7f9fb;
+  border-radius: 8px;
+}
+.custom-table thead {
+  background-color: #e0f7fa; /* Light cyan for the header */
+  color: #14262e; /* Dark Persian blue for text */
+}
+
+.custom-table tbody tr:nth-child(odd) {
+  background-color: #40a2d7; /* Light Persian blue */
+}
+
+.custom-table tbody tr:nth-child(even) {
+  background-color: #ffffff; /* White for even rows */
+}
+
+.custom-table tbody tr td {
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #dee2e6;
+}
+
+.custom-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 600px;
+  width: 100%;
+}

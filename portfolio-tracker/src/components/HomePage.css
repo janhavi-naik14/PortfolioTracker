@@ -1,0 +1,370 @@
+/* src/components/HomePage.css */
+
+/* Navbar Section */
+/* HomePage.css */
+
+.home-page .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #0d0b30;
+    color: white;
+  }
+  
+.home-page .navbar .logo {
+    font-size: 24px;
+    margin-left: 30px;
+  }
+  
+.home-page .navbar .search-bar {
+    padding: 8px;
+    width:50%;
+    border-radius: 8px;
+  }
+  
+.home-page .navbar .signin-button {
+  background-color: rgb(47, 32, 106);
+  margin-right: 5px;
+  color: #f6f6fa;
+  border: 1px solid #003b5c;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.home-page.navbar .signin-button:hover {
+  background-color: #003b5c;
+  color: white;
+}
+  /* General Styles */
+ .home-page .image-slider {
+  width: 80%;
+  margin: 20px auto;
+  position: relative; /* Ensuring the text can be absolutely positioned over the image */
+  text-align: center;
+}
+
+/* Slider Container to hold image and text */
+.home-page .slider-container {
+  position: relative; /* So that the typing text can be positioned over the image */
+}
+
+.home-page .image-slider .slider-image {
+  width: 100%;
+  max-height: 550px; /* Set a max height to control the image size */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Typing Effect Styling */
+.typing-effect {
+  position: absolute; /* Positioning it on top of the image */
+  top: 50px; /* Adjust as needed for vertical placement */
+  left: 40px; /* Adjust as needed for horizontal placement */
+  font-size: 30px;
+  font-weight: bold;
+  color: #ffffff; /* White text to contrast with the images */
+  margin-bottom: 20px;
+  z-index: 10; /* Ensures the text is above the image */
+  white-space: nowrap; /* Prevents text from wrapping */
+}
+
+/* Typing Effect Text Styling */
+.typed-text {
+  display: inline-block;
+  animation: blink-cursor 0.8s step-end infinite;
+}
+
+@keyframes blink-cursor {
+  50% {
+    border-right: 2px solid transparent;
+  }
+  100% {
+    border-right: 2px solid #333;
+  }
+}
+
+  
+  /* Slick Dots and Arrows Styling */
+  .slick-dots {
+    bottom: 10px;
+     
+  }
+  
+  .slick-dots li button:before {
+    font-size: 30px;
+    color: #050732; 
+     /* Persian Blue for active dot */
+  }
+  
+  .slick-dots li.slick-active button:before {
+    color: #03073b;
+      /* Slightly lighter blue for active dot */
+  }
+  
+  .slick-prev,
+  .slick-next {
+    z-index: 1;
+    background-color: #040935; /* White buttons for better visibility */
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .slick-prev:hover,
+  .slick-next:hover {
+    background-color: #150e33; /* Persian Blue on hover */
+    color: #07064e; /* White arrow on hover */
+  }
+  
+  .slick-prev:before,
+  .slick-next:before {
+    font-size: 20px;
+    color: #060115; /* Persian Blue for arrows */
+  }
+  .features {
+    margin: 40px 20px 30px ;
+    position: relative;
+    text-align: center;
+    padding: 50px 10px; /* Adds padding for content spacing */
+    padding-bottom: 50px; /* Ensures space at the bottom for SVG alignment */
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%230d0b30" fill-opacity="1" d="M0,288L48,250.7C96,213,192,139,288,133.3C384,128,480,192,576,202.7C672,213,768,171,864,133.3C960,96,1056,64,1152,69.3C1248,75,1344,117,1392,138.7L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>') no-repeat;
+    background-size: cover; /* Ensures SVG fits well inside the section */
+    background-position: 0px 40px ;
+    background-repeat: no-repeat; /* Prevents the SVG from repeating */
+    z-index: -1; /* Ensures backgroud stays behind content */
+}
+
+
+
+.home-page .features h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color:white;
+}
+
+.feature-row {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.feature-item {
+    width: 30%;
+    padding: 15px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    border: 1px solid #060115;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.feature-item:hover {
+    background-color: #e0e0e0;
+    transform: translateY(-5px);
+}
+
+.feature-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.feature-item h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.feature-item p {
+    font-size: 14px;
+    color: #555;
+}
+
+
+
+
+@media (max-width: 768px) {
+    .feature-item {
+        width: 45%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .feature-item {
+        width: 100%;
+    }
+}
+
+  
+  /* Stock Ticker Section */
+.stock-ticker-container {
+  background-color: #11082d; /* Persian Blue */
+  color: white;
+  padding: 10px 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.ticker-wrap {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.ticker {
+  display: flex;
+  white-space: nowrap;
+  animation: ticker-scroll 25s linear infinite;
+}
+
+.ticker span {
+  margin: 0 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Animation for the ticker */
+@keyframes ticker-scroll {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+  /* Contact Us Section */
+.contact-us {
+  text-align: center;
+  padding: 30px;
+  background-color: #f8f8f8;
+  border-top: 1px solid #ddd;
+  font-family: 'Arial', sans-serif;
+}
+
+.contact-us h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #003b5c;
+}
+
+.contact-us p {
+  font-size: 18px;
+  color: #333;
+}
+
+.contact-us a {
+  color: #003b5c;
+  text-decoration: none;
+}
+
+.contact-us .social-media {
+  margin-top: 20px;
+}
+
+.contact-us .social-icon {
+  display: inline-block;
+  margin: 0 15px;
+  font-size: 30px;
+  color: #003b5c;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-us .social-icon:hover {
+  color: #0078d4; /* Change to a different color on hover */
+  transform: scale(1.1);
+}
+
+.contact-us .social-icon.facebook:hover {
+  color: #3b5998;
+}
+
+.contact-us .social-icon.twitter:hover {
+  color: #1da1f2;
+}
+
+.contact-us .social-icon.linkedin:hover {
+  color: #0077b5;
+}
+
+.contact-us .social-icon.instagram:hover {
+  color: #e4405f;
+}
+
+  /* Footer Section */
+  .footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    margin-top: 40px;
+  }
+  /* Navbar: Adjust for smaller screens */
+@media (max-width: 768px) {
+  .home-page .navbar {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .home-page .navbar .logo {
+    margin-bottom: 10px;
+  }
+
+  .home-page .navbar .search-bar {
+    width: 90%;
+  }
+
+  .home-page .navbar .btn {
+    margin: 5px;
+  }
+}
+
+/* Image Slider: Text and image adjustments */
+@media (max-width: 768px) {
+  .home-page .typing-effect {
+    font-size: 18px;
+    top: 20px;
+    left: 20px;
+  }
+
+  .home-page .image-slider .slider-image {
+    max-height: 300px;
+  }
+}
+
+/* Features Section: Better stacking for smaller screens */
+@media (max-width: 576px) {
+  .feature-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature-item {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+}
+
+/* Footer and Contact Section */
+@media (max-width: 480px) {
+  .contact-us h2 {
+    font-size: 22px;
+  }
+
+  .contact-us p {
+    font-size: 16px;
+  }
+
+  .footer {
+    font-size: 14px;
+  }
+}
